@@ -1,8 +1,6 @@
-#sweethome
-
 APLIKASI COMPANY PROFILE DENGAN PHP
 
-#struktur
+struktur folder
 
 #controler
 -Home
