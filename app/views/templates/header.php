@@ -16,5 +16,3 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700" rel="stylesheet">
 </head>
 <body>
-
-<h1>Hello, world!</h1>
