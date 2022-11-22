@@ -16,7 +16,7 @@
     <title>Footer</title>
 </head>
 <body>
-    <footer class="bd-footer py-4 py-md=5 mt-5" style="background-color: #2F3868">
+    <footer class="bd-footer py-4 py-md=5 mt-5" style="background-color: #2F3868" id="kontak">
     <div class="container py-2 py-md-3 px-2 px-md-1">
         <div class="row">
             <div class="col-lg-6 mb-3">

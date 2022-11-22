@@ -20,23 +20,23 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg" style="background-color: #435093;">
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #435093;">
     <div class="container-fluid">
       <img src="../../../public/dist/img/logo.png" width="82" height="73" class="d-inline-block align-text-middle ms-3">
       <a class="navbar-brand text-white">SWEET HOME</a>
       <div class="collapse navbar-collapse justify-content-end me-5">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Beranda</a>
+            <a class="nav-link text-white" href="#beranda">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Tentang</a>
+            <a class="nav-link text-white" href="#tentang">Tentang</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Katalog</a>
+            <a class="nav-link text-white" href="#katalog">Katalog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Kontak</a>
+            <a class="nav-link text-white" href="#kontak">Kontak</a>
           </li>
         </ul>
       </div>
