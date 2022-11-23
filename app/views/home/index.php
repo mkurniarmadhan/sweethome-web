@@ -61,7 +61,7 @@
                     <img src="../../../public/dist/img/image 18.png" style="z-index: 1; position:relative; left: 180px; top: 50px; bottom: 150px;">
                 </div>
                 <div>
-                    <div class="ms-5 mt-5 align-self-center bg-white shadow p-5 mb-5 bg-body rounded" style="z-index: 1; position:absolute; height: 400px; left: 500px; right: 150px; top: 750px; bottom: 500px;">
+                    <div class="ms-5 mt-5 align-self-center bg-white shadow p-5 mb-5 bg-body rounded" style="z-index: 1; position:absolute; height: 400px; left: 500px; right: 150px; top: 850px; bottom: 500px;">
                         <h5 class="mt-4 fw-bold text-center" style="font-size: 45px; color: #142271;">Sweet Home</h5>
                         <hr style="background-color: #000000; height: 2px;"></hr>
                         <ul class="list-unstyled small text-muted">
