@@ -4,7 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        .mySlides {
+            display: none;
+        }
+        .cursor {
+            cursor: pointer;
+        }
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        .demo {
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
     <!-- header -->
@@ -72,8 +93,21 @@
                 </ul>
                 <button class="btn text-light" style="background-color: #3649AC; align-s: end;">Lihat Katalog <i class="bi bi-chevron-right"></i></button> 
             </div>
-            <div class="col-lg-6 ms-5">
-                
+            <div class="col-lg-2 ms-5 mt-5 align-self-center">
+                <img src="../../../public/dist/img/image 11.png" class="demo cursor" style="width: 50%" onclick="currentSlide(1)">
+                <img src="../../../public/dist/img/image 16.png" class="demo cursor" style="width: 50%" onclick="currentSlide(2)">
+                <img src="../../../public/dist/img/image 12.png" class="demo cursor" style="width: 50%" onclick="currentSlide(3)">
+            </div>
+            <div class="col-lg-4 ms-5 mt-5 align-self-center">
+                <div class="mySlides">
+                        <img src="../../../public/dist/img/image 11.png" style="width: 100%">
+                </div> 
+                <div class="mySlides">
+                        <img src="../../../public/dist/img/image 16.png" style="width: 100%">
+                </div> 
+                <div class="mySlides">
+                        <img src="../../../public/dist/img/image 12.png" style="width: 100%">
+                </div> 
             </div>
         </div>
     </div>
@@ -82,6 +116,34 @@
 
     <!-- footer -->
     <?php echo file_get_contents('../templates/footer.php') ?>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
     
 </body>
 </html>
